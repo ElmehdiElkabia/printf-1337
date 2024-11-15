@@ -6,11 +6,11 @@
 /*   By: eelkabia <eelkabia@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/15 13:56:33 by eelkabia          #+#    #+#             */
-/*   Updated: 2024/11/15 13:56:43 by eelkabia         ###   ########.fr       */
+/*   Updated: 2024/11/15 16:56:15 by eelkabia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	ft_putnbr(int n)
 {

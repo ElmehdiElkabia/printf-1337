@@ -6,11 +6,11 @@
 /*   By: eelkabia <eelkabia@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/15 13:57:18 by eelkabia          #+#    #+#             */
-/*   Updated: 2024/11/15 13:57:25 by eelkabia         ###   ########.fr       */
+/*   Updated: 2024/11/15 16:56:04 by eelkabia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	ft_puthex_upper(unsigned int n)
 {
