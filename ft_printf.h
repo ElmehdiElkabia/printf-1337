@@ -28,4 +28,16 @@ int	ft_puthex(unsigned int n);
 int	ft_puthex_upper(unsigned int n);
 int	ft_putunbr(unsigned int n);
 
+<<<<<<< HEAD
+=======
+int	ft_printf(const char *p, ...);
+int	ft_putchar(int c);
+int	ft_puthex_upper(unsigned int n);
+int	ft_puthex(unsigned int n);
+int	ft_putnbr(int n);
+int	ft_putptr(void *p);
+int	ft_putstr(char *s);
+int	ft_putunbr(unsigned int n);
+
+>>>>>>> origin/master
 #endif
