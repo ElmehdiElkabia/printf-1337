@@ -6,11 +6,7 @@
 /*   By: eelkabia <eelkabia@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/15 13:55:38 by eelkabia          #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2024/11/16 20:22:51 by eelkabia         ###   ########.fr       */
-=======
-/*   Updated: 2024/11/15 16:55:53 by eelkabia         ###   ########.fr       */
->>>>>>> origin/master
+/*   Updated: 2024/11/16 21:12:49 by eelkabia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,18 +15,17 @@
 int	ft_puthex(unsigned int n)
 {
 	int	i;
+	char *hex;
 
 	i = 0;
+	hex = "0123456789abcdef";
 	if (n == 0)
 	{
 		i += ft_putchar('0');
 		return (i);
 	}
 	if (n >= 16)
-		i += ft_puthex(n / 16);
-	if (n % 16 < 10)
-		i += ft_putchar(n % 16 + '0');
-	else
-		i += ft_putchar(n % 16 - 10 + 'a');
+        i += ft_puthex(n / 16);
+    i += ft_putchar(hex[n % 16]);
 	return (i);
 }
