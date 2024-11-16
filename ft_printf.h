@@ -1,30 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libftprintf.h                                      :+:      :+:    :+:   */
+/*   ft_printf.h                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eelkabia <eelkabia@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 11:24:16 by eelkabia          #+#    #+#             */
-/*   Updated: 2024/11/15 14:04:48 by eelkabia         ###   ########.fr       */
+/*   Updated: 2024/11/16 20:13:49 by eelkabia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFTPRINTF_H
-# define LIBFTPRINTF_H
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 
-# include <stdlib.h>
-# include <unistd.h>
 # include <stdarg.h>
 # include <stddef.h>
 # include <stdio.h>
+# include <stdlib.h>
+# include <unistd.h>
 
-int	ft_printf(const char *, ...);
-int	ft_putchar(int);
-int	ft_putstr(char *);
-int	ft_putptr(void *);
-int	ft_putnbr(int);
-int	ft_puthex(unsigned int);
-int	ft_puthex_upper(unsigned int);
-int	ft_putunbr(unsigned int);
+int	ft_printf(const char *p, ...);
+int	ft_putchar(int c);
+int	ft_putstr(char *s);
+int	ft_putptr(void *p);
+int	ft_putnbr(int n);
+int	ft_puthex(unsigned int n);
+int	ft_puthex_upper(unsigned int n);
+int	ft_putunbr(unsigned int n);
+
 #endif

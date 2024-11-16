@@ -6,13 +6,13 @@
 /*   By: eelkabia <eelkabia@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/15 11:40:30 by eelkabia          #+#    #+#             */
-/*   Updated: 2024/11/15 11:40:48 by eelkabia         ###   ########.fr       */
+/*   Updated: 2024/11/16 20:26:12 by eelkabia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	ft_putchar(int c)
 {
-	return write(1, &c, 1);
+	return (write(1, &c, 1));
 }
