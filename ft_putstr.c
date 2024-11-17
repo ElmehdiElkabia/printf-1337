@@ -6,7 +6,7 @@
 /*   By: eelkabia <eelkabia@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/15 11:41:13 by eelkabia          #+#    #+#             */
-/*   Updated: 2024/11/16 21:03:16 by eelkabia         ###   ########.fr       */
+/*   Updated: 2024/11/17 09:32:47 by eelkabia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	ft_putstr(char *s)
 
 	i = 0;
 	if (!s)
-		return (ft_putstr("(null)"));
+		return (ft_putstr("(nill)"));
 	while (s[i])
 	{
 		ft_putchar(s[i]);

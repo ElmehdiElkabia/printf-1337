@@ -14,19 +14,18 @@
 
 int	ft_puthex_upper(unsigned int n)
 {
-	int	i;
-	char *hex_upper;
-	
+	int		i;
+	char	*hex_upper;
+
 	i = 0;
 	hex_upper = "0123456789ABCDEF";
-
 	if (n == 0)
 	{
 		i += ft_putchar('0');
 		return (i);
 	}
 	if (n >= 16)
-        i += ft_puthex_upper(n / 16);
-    i += ft_putchar(hex_upper[n % 16]);
+		i += ft_puthex_upper(n / 16);
+	i += ft_putchar(hex_upper[n % 16]);
 	return (i);
 }
