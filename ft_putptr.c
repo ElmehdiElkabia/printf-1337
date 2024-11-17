@@ -6,7 +6,7 @@
 /*   By: eelkabia <eelkabia@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/15 13:55:20 by eelkabia          #+#    #+#             */
-/*   Updated: 2024/11/17 10:02:43 by eelkabia         ###   ########.fr       */
+/*   Updated: 2024/11/17 19:30:14 by eelkabia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,11 @@ static int	ft_put(unsigned long n)
 
 	i = 0;
 	hex = "0123456789abcdef";
+	if (n == 0)
+	{
+		i += ft_putchar('0');
+		return (i);
+	}
 	if (n >= 16)
 		i += ft_put(n / 16);
 	i += ft_putchar(hex[n % 16]);
@@ -31,7 +36,7 @@ int	ft_putptr(void *p)
 
 	i = 0;
 	if (!p)
-		i += ft_putstr("0x0");
+		i += ft_putstr("(nil)");
 	else
 	{
 		i += ft_putstr("0x");

@@ -6,7 +6,7 @@
 /*   By: eelkabia <eelkabia@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 11:22:06 by eelkabia          #+#    #+#             */
-/*   Updated: 2024/11/17 12:34:25 by eelkabia         ###   ########.fr       */
+/*   Updated: 2024/11/17 22:13:24 by eelkabia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,8 @@ int	ft_printf(const char *p, ...)
 	int		i;
 
 	i = 0;
+	if (!p)
+		return (-1);
 	va_start(va, p);
 	while (*p)
 	{
@@ -47,6 +49,11 @@ int	ft_printf(const char *p, ...)
 		{
 			p++;
 			ft_forma(va, *p, &i);
+		}
+		else if (*p == '%' && *(p + 1) == '\0')
+		{
+			va_end(va);
+			return (-1);
 		}
 		else
 			i += ft_putchar(*p);
