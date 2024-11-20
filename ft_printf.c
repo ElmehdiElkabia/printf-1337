@@ -6,7 +6,7 @@
 /*   By: eelkabia <eelkabia@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 11:22:06 by eelkabia          #+#    #+#             */
-/*   Updated: 2024/11/17 22:13:24 by eelkabia         ###   ########.fr       */
+/*   Updated: 2024/11/20 19:17:46 by eelkabia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,10 @@ static void	ft_forma(va_list va, char p, int *i)
 	else if (p == '%')
 		*i += ft_putchar('%');
 	else
+	{
+		*i += ft_putchar('%');
 		*i += ft_putchar(p);
+	}
 }
 
 int	ft_printf(const char *p, ...)
@@ -40,7 +43,7 @@ int	ft_printf(const char *p, ...)
 	int		i;
 
 	i = 0;
-	if (!p)
+	if (!p || write(1, NULL, 0) == -1)
 		return (-1);
 	va_start(va, p);
 	while (*p)

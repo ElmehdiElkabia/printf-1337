@@ -6,7 +6,7 @@
 /*   By: eelkabia <eelkabia@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/15 13:56:33 by eelkabia          #+#    #+#             */
-/*   Updated: 2024/11/17 19:33:38 by eelkabia         ###   ########.fr       */
+/*   Updated: 2024/11/19 18:36:07 by eelkabia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ int	ft_putnbr(int n)
 		i += ft_putchar('-');
 		if (n == -2147483648)
 		{
-			i += ft_putchar('2');
-			n = 147483648;
+			i += ft_putstr("2147483648");
+			return (i);
 		}
 		else
 			n *= -1;
